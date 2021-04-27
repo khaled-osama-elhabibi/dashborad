@@ -10,10 +10,26 @@ import Monitor from "./main-components/monitor.js";
 
 import TransferScreen from "./transfer-components/transfer.js";
 class App extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {transferScreen : "none"}
+        this.displayTransferScreen = this.displayTransferScreen.bind(this)
+        this.closeTransferScreen = this.closeTransferScreen.bind(this)
+    }
+    closeTransferScreen(){
+        this.setState({
+            transferScreen : "none"
+        })
+    }
+    displayTransferScreen(){
+        this.setState({
+            transferScreen : "inline-block"
+        })
+    }
     render() {
         return (
         <div className = "app">
-            <div className = "row-1">
+            <div className = "row-1"> 
                 <Notifications/>
                 <UserInfo/>
             </div>
@@ -29,11 +45,11 @@ class App extends React.Component {
                 <div className = "col-transter-lic-key">
                     <LicenseKey/>
                     <DiscordID/>
-                    <Transfer/>
+                    <Transfer displayTransferScreen = {this.displayTransferScreen}/>
                     <DesktopApp/>
                 </div>
             </div>
-            <TransferScreen/>
+            <TransferScreen closeTransferScreen={this.closeTransferScreen} display = {this.state.transferScreen}/>
         </div>
         );
     }

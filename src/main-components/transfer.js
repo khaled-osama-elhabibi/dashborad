@@ -1,4 +1,8 @@
 class Transfer extends React.Component {
+    constructor(props){
+        super(props) ;
+        this.clickHandler = this.clickHandler.bind(this) ; 
+    }
     render() {
         return (
             <div className = "transfer">
@@ -13,13 +17,16 @@ class Transfer extends React.Component {
                         <p className = "transfer__info__email__statment">Current Email</p>
                         <p className = "transfer__info__email__actual">anthony2142@email.com</p>
                     </div>
-                    <button style = {{color : "#1EC1C3"}}  className = "transfer__btn btn-common">
+                    <button onClick={this.clickHandler} style = {{color : "#1EC1C3"}}  className = "transfer__btn btn-common">
                         <p className = "transfer__btn__txt"> Transfer To </p>
                         <span className="material-icons">chevron_right</span>
                     </button>
                 </div>
             </div>
         );
+    }
+    clickHandler(){
+        this.props.displayTransferScreen();
     }
 }
 
