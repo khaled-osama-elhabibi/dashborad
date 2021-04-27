@@ -1,0 +1,40 @@
+.app{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+.row-1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.row-2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 20px;
+}
+.col-main-table-monitor{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+}
+.col-transter-lic-key{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    align-items: flex-end;
+}
+.row-monitor{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 130px;
+}

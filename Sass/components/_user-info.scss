@@ -1,0 +1,30 @@
+.user-info{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    &__img{
+        width: 55px;
+        margin-right: 10px;
+    }
+    &__main-info{
+        margin-right: 25px;
+        &__name{
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        &__email{
+            font-size: 1.3rem;
+            color: $gray-color ;
+        }
+    }
+}
+.notify{
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    display: inline-block ;
+    color : $primary-color-lighten ;
+    border: 1px solid $primary-color-lighten;
+}

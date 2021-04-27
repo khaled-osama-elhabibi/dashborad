@@ -1,0 +1,57 @@
+.license-key{
+    width: 90%;
+    border-radius: 8px;
+    padding: 75px 20px 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $primary-color; 
+    margin-bottom: 25px;
+    &__statment{
+        font-size: 1.3rem;
+        color: $gray-color ;
+        margin-bottom: 5px;
+    }
+    &__number{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;        
+        margin-bottom: 25px;
+        &__icon{
+            color: $success-color ;
+            cursor: pointer;
+        }
+    }
+    &__btns{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &__renew{
+            cursor: pointer;
+            width: 223px;
+            border-radius: 5px;
+            padding-top: 15px ;
+            padding-bottom: 15px;
+            background-color: $secondry-color;
+            color: $white-color ;
+            border: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            &__w1{
+                margin-left: 15px;
+            }
+            &__w2{
+                font-weight: 900;
+                margin-right: 15px;
+            }
+        }       
+    }
+    &__renewal{
+        font-size: 1.3rem;
+        font-weight: 300;
+        &__date{
+            font-weight: 700;
+        }
+    }
+}

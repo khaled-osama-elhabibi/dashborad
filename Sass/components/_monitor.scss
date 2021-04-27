@@ -1,0 +1,27 @@
+.monitor{
+    border-radius: 8px;
+    background-color: $primary-color;
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__record{
+        &__statment{
+            margin-bottom: 20px;
+        }
+        &__number{
+            &-assign{
+                font-size: 3.5rem;
+                font-weight: 600;
+                margin-right: 4px;
+                &--Checkouts{
+                    color: $success-color;
+                }
+                &--Failures{
+                    color: $failure-color;
+                }
+            }
+        }
+    }
+}

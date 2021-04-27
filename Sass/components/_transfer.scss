@@ -1,0 +1,42 @@
+.transfer{
+    padding: 25px 20px;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $primary-color;
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+    &__statment{
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        &__SVG{
+            margin-right: 10px;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:  space-between;
+
+        &__email{
+            &__statment{
+                font-size: 1.3rem;
+                color: $gray-color;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    &__btn{
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        justify-content: center;
+        &__txt{
+            align-self: center;
+        }
+    }
+}
