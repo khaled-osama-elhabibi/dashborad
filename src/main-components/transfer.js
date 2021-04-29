@@ -17,7 +17,7 @@ class Transfer extends React.Component {
                         <p className = "transfer__info__email__statment">Current Email</p>
                         <p className = "transfer__info__email__actual">anthony2142@email.com</p>
                     </div>
-                    <button onClick={this.clickHandler} style = {{color : "#1EC1C3"}}  className = "transfer__btn btn-common">
+                    <button onClick={this.clickHandler} className = "transfer__btn btn-common btn-common--color-blue">
                         <p className = "transfer__btn__txt"> Transfer To </p>
                         <span className="material-icons">chevron_right</span>
                     </button>

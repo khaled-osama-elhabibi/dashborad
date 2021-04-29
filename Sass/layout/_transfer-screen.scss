@@ -8,14 +8,106 @@
     background-color: rgba($color: #000000, $alpha: .7) ;
     transition: all .3s;
 }
-.transfer-window{
+.confirmation-window , .transfer-window {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    padding : 20px ; 
-    border-radius: 5px;
     display: inline-block;
-    background-color: $primary-color;
-    width: 400px;
+}
+.transfer-window{
+    width: 475px;
+    &__main{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        width: 100%;
+        background-color: $primary-color;
+        padding : 20px ; 
+
+        &__h1{
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        &__p{
+            font-size: 1.4rem;
+            margin-bottom: 9px;
+        }
+        &__input{
+    
+            width: 100%;
+            outline: none;
+            padding: 17px 12px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            background-color: $primary-color-dark;
+            font-size: 1.6rem;
+            &::placeholder{
+                color: $primary-color;
+            }
+            &:focus-visible{
+                outline: none;
+            }
+        }       
+    }
+    &__btns{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: $primary-color-dark;
+        width: 100%;
+        padding : 20px ; 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        &__cancel{
+            margin-right: 15px;
+        }
+    }
+}
+.confirmation-window{
+    padding: 55px 20px;
+    width: 450px;
+    background-color: #2B2F55;
+    height: 405px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    &__statment{
+        &-1{font-size: 2rem;}
+        &-2{
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 21px;
+            &__e-mail{
+                color: #1EC1C3;
+                border-bottom: 1px solid #1EC1C3;
+            }
+        }
+        &-3{
+            color: gray;
+            font-size: 1.3rem;
+        }
+        &-4{    
+            font-size: 1.3rem;
+            font-weight: 300;
+            &__send-again{
+                cursor: pointer;
+                margin-left: 5px;
+                color: #1EC1C3;
+                border-bottom: 1px solid #1EC1C3;
+            }
+        }
+    }
+    &__close{
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
 }

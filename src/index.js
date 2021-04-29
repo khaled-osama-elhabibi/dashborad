@@ -8,7 +8,7 @@ import Transfer from "./main-components/transfer.js" ;
 import UserInfo from "./main-components/userInfo.js" ;
 import Monitor from "./main-components/monitor.js";
 
-import TransferScreen from "./transfer-components/transfer.js";
+import TransferScreen from "./transfer-screen/transfer.js";
 class App extends React.Component {
     constructor(props){
         super(props)

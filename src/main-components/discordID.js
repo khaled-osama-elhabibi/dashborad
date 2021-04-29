@@ -11,9 +11,8 @@ class DiscordID extends React.Component {
                         Discord ID
                     </div>
                     <p className = "discord-id__info__actual">antony#2142</p>
-                
                 </div>
-                <button style = {{color : "#EC4165"}} className = "discord-id__btn btn-common">Unbind</button>
+                <button className = "discord-id__btn btn-common btn-common--color-red">Unbind</button>
             </div>
         );
     }

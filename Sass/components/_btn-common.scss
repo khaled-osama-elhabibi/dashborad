@@ -6,4 +6,16 @@
     padding-bottom: 15px;
     background-color: $primary-color-lighten;
     border: none;
+    &--color-red{
+        color:#EC4165 ;
+    }
+    &--color-blue{
+        color:#1EC1C3 ;
+    }
+    &--color-white{
+        color:$white-color ;
+    }
+    &--bgcolor-blue{
+        background-color: #1EC1C3;
+    }
 }

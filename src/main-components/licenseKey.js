@@ -12,7 +12,7 @@ class LicenseKey extends React.Component {
                         <span className = "license-key__btns__renew__w1">Renew Now</span>
                         <span className = "license-key__btns__renew__w2">Stripe</span>
                     </button>
-                    <button style = {{color : "#EC4165"}} className = "btn-common">
+                    <button className = "btn-common btn-common--color-red">
                         Deactivate
                     </button>
                 </div>

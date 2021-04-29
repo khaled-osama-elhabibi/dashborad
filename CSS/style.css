@@ -145,6 +145,14 @@ body {
   padding-bottom: 15px;
   background-color: #323662;
   border: none; }
+  .btn-common--color-red {
+    color: #EC4165; }
+  .btn-common--color-blue {
+    color: #1EC1C3; }
+  .btn-common--color-white {
+    color: #ffff; }
+  .btn-common--bgcolor-blue {
+    background-color: #1EC1C3; }
 
 .discord-id {
   padding: 25px 20px;
@@ -307,13 +315,87 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   transition: all .3s; }
 
-.transfer-window {
+.confirmation-window, .transfer-window {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 5px;
-  display: inline-block;
+  display: inline-block; }
+
+.transfer-window {
+  width: 475px; }
+  .transfer-window__main {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    background-color: #2B2F55;
+    padding: 20px; }
+    .transfer-window__main__h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    .transfer-window__main__p {
+      font-size: 1.4rem;
+      margin-bottom: 9px; }
+    .transfer-window__main__input {
+      width: 100%;
+      outline: none;
+      padding: 17px 12px;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      background-color: #202342;
+      font-size: 1.6rem; }
+      .transfer-window__main__input::placeholder {
+        color: #2B2F55; }
+      .transfer-window__main__input:focus-visible {
+        outline: none; }
+  .transfer-window__btns {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #202342;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end; }
+    .transfer-window__btns__cancel {
+      margin-right: 15px; }
+
+.confirmation-window {
+  padding: 55px 20px;
+  width: 450px;
   background-color: #2B2F55;
-  width: 400px; }
+  height: 405px;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }
+  .confirmation-window__statment-1 {
+    font-size: 2rem; }
+  .confirmation-window__statment-2 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 21px; }
+    .confirmation-window__statment-2__e-mail {
+      color: #1EC1C3;
+      border-bottom: 1px solid #1EC1C3; }
+  .confirmation-window__statment-3 {
+    color: gray;
+    font-size: 1.3rem; }
+  .confirmation-window__statment-4 {
+    font-size: 1.3rem;
+    font-weight: 300; }
+    .confirmation-window__statment-4__send-again {
+      cursor: pointer;
+      margin-left: 5px;
+      color: #1EC1C3;
+      border-bottom: 1px solid #1EC1C3; }
+  .confirmation-window__close {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; }
