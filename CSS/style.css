@@ -242,8 +242,18 @@ body {
         margin-bottom: 5px; }
 
 .main-table {
-  margin-top: 20px;
   border-collapse: collapse; }
+  .main-table__container {
+    height: 580px;
+    overflow-y: scroll;
+    margin-top: 20px; }
+    .main-table__container::-webkit-scrollbar {
+      width: 15px;
+      background-color: #292d52; }
+    .main-table__container::-webkit-scrollbar-thumb {
+      width: 10px;
+      background: #3d4379;
+      border-radius: 10px; }
   .main-table__main-row {
     border-radius: 8px;
     background-color: #2B2F55; }
